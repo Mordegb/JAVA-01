@@ -1,4 +1,4 @@
-public abstract class funcionario {
+ abstract class funcionario {
     //atributos
     public String nome;
     public Integer idade;
@@ -22,8 +22,19 @@ public abstract class funcionario {
         this.ativo = true;
     }
 
-    public abstract void tirarFerias();
+    public void tirarFerias(){
+        this.ativo = false;
+    }
+
+    public abstract void apresentar();
+
+    public void promocao(){
+        this.nivelDeAcesso++;
+    }
+
+     public String getClasse() {
+         return this.getClass().getSimpleName();
+     }
 
 
-
-}
+ }
