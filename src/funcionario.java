@@ -32,8 +32,12 @@
         this.nivelDeAcesso++;
     }
 
-     public String getClasse() {
+     public String getClasse() { //função que retorna o nome da classe
          return this.getClass().getSimpleName();
+     }
+
+     public Double calcularDecimoTerceiro(int MesesTrabalhados) {
+        return ((this.salario/12)*MesesTrabalhados);
      }
 
 

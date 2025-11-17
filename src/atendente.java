@@ -3,7 +3,7 @@ public class atendente extends funcionario {
     public atendente(){
           this.nome = "linus";
           this.idade = 18;
-          this.salario = 1.518;
+          this.salario = 1718.0;
           this.nivelDeAcesso = 1;
           this.ativo = true;
     }
@@ -26,10 +26,4 @@ public class atendente extends funcionario {
         System.out.println("olá meu nome é "+this.nome+",e sou "+ this.getClasse()+" dessa empresa");
     }
 
-
-
-   /* @Override
-    public String getClasse() {
-        return super.getClasse();
-    }*/
 }
